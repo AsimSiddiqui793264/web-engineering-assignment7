@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#d8e9f5"/><stop offset="1" stop-color="#a9c7dc"/></linearGradient></defs>
+<rect width="900" height="560" fill="url(#bg)"/>
+<circle cx="450" cy="285" r="210" fill="#fff" opacity=".26"/>
+<ellipse cx="450" cy="470" rx="245" ry="28" fill="#20394a" opacity=".18"/>
+<path d="M300 310 V250 C300 120 600 120 600 250 V310" fill="none" stroke="#26364a" stroke-width="42" stroke-linecap="round"/>
+        <rect x="270" y="280" width="90" height="170" rx="35" fill="#25364b"/><rect x="540" y="280" width="90" height="170" rx="35" fill="#25364b"/>
+        <rect x="290" y="305" width="50" height="115" rx="22" fill="#8dd1d0"/><rect x="560" y="305" width="50" height="115" rx="22" fill="#8dd1d0"/>
+<text x="450" y="525" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#26384d">Wireless Headphones</text>
+</svg>

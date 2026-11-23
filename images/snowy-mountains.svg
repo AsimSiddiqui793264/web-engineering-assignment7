@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#5d9fc7"/><stop offset="1" stop-color="#d4e8f2"/></linearGradient>
+ <linearGradient id="water" x2="0" y2="1"><stop stop-color="#8ed5df"/><stop offset="1" stop-color="#277e9b"/></linearGradient>
+</defs>
+<rect width="900" height="560" fill="url(#sky)"/>
+<circle cx="710" cy="120" r="58" fill="#FFE08A" opacity=".95"/>
+<path d="M0 360 L180 130 L330 350 L485 105 L700 365 L810 190 L900 330 V560 H0Z" fill="#637f98"/>
+<path d="M120 260 L180 130 L240 255 L205 235 L180 250 L155 225Z" fill="#f4f7f5" opacity=".9"/>
+<path d="M380 290 L485 105 L600 300 L540 265 L490 280 L455 245Z" fill="#f7fafb" opacity=".92"/>
+<path d="M0 390 Q180 335 350 390 T700 380 T900 390 V560 H0Z" fill="#42657a"/>
+<path d="M0 430 Q170 390 330 430 T650 420 T900 430 V560 H0Z" fill="url(#water)"/>
+<path d="M0 480 Q200 450 400 480 T900 475" fill="none" stroke="#d5f3ed" stroke-width="7" opacity=".6"/>
+<path d="M0 515 Q200 490 400 515 T900 510" fill="none" stroke="#d5f3ed" stroke-width="4" opacity=".5"/>
+<path d="M0 390 Q110 340 190 385 Q270 340 360 395 L360 560 H0Z" fill="#2c514b"/>
+<path d="M660 390 Q760 330 900 390 V560 H660Z" fill="#2c514b" opacity=".9"/>
+<g fill="#244e43"><path d="M80 390 l28 -95 28 95z"/><path d="M120 405 l25 -80 25 80z"/><path d="M770 395 l30 -105 30 105z"/></g>
+<text x="42" y="70" fill="#ffffff" font-family="Arial" font-size="1" opacity="0"> </text>
+<rect x="28" y="24" width="270" height="54" rx="14" fill="#102d40" opacity=".62"/>
+<text x="50" y="60" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700">Snowy Mountains</text>
+</svg>

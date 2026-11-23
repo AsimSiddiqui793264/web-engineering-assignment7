@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f1dfc9"/><stop offset="1" stop-color="#c5d7e6"/></linearGradient></defs>
+<rect width="900" height="560" fill="url(#bg)"/>
+<circle cx="450" cy="285" r="210" fill="#fff" opacity=".26"/>
+<ellipse cx="450" cy="470" rx="245" ry="28" fill="#20394a" opacity=".18"/>
+<rect x="235" y="190" width="430" height="245" rx="38" fill="#293b50"/>
+        <rect x="275" y="225" width="350" height="175" rx="18" fill="#9db8c8"/>
+        <circle cx="450" cy="310" r="82" fill="#152c40" stroke="#d7e4e9" stroke-width="16"/>
+        <circle cx="450" cy="310" r="52" fill="#4c7187"/><circle cx="450" cy="310" r="22" fill="#b6d8df"/>
+        <rect x="390" y="155" width="120" height="42" rx="12" fill="#293b50"/>
+<text x="450" y="525" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#26384d">Digital Camera</text>
+</svg>

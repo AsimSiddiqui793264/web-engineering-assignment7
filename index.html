@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Engineering - Lab 07</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f3f6fb;
+            color: #253247;
+            font-family: Arial, sans-serif
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #123c69, #1e7b72);
+            color: white;
+            border-radius: 16px
+        }
+
+        .section {
+            background: white;
+            border: 1px solid #e4eaf1;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 26px;
+            box-shadow: 0 4px 16px #1b35500d
+        }
+
+        .section h2 {
+            color: #164e75;
+            font-weight: 700;
+            border-bottom: 2px solid #e8eef5;
+            padding-bottom: 10px;
+            margin-bottom: 18px
+        }
+
+        .demo {
+            background: #eaf2fb;
+            border: 1px solid #cbdced;
+            border-radius: 9px;
+            padding: 22px 10px;
+            text-align: center;
+            height: 100%
+        }
+
+        .inner {
+            background: #e9f7ef;
+            border: 1px solid #b9dfc8;
+            border-radius: 8px;
+            padding: 18px 6px;
+            text-align: center;
+            height: 100%
+        }
+
+        .destination,
+        .product {
+            height: 190px;
+            width: 100%;
+            object-fit: cover
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container py-4 py-md-5">
+        <header class="hero text-center p-4 p-md-5 mb-4 shadow-sm">
+            <span class="badge bg-warning text-dark mb-3">WEB ENGINEERING • LAB 07</span>
+            <h1 class="display-5 fw-bold">Bootstrap 5 Components</h1>
+            <p class="lead mb-0">Containers, Grid Rows & Columns, Alerts, Cards and Buttons</p>
+        </header>
+        <div class="alert alert-info"><strong>Lab Objective:</strong> To practice using Bootstrap 5 containers, grid
+            rows and columns, alert components, card components and button components.</div>
+
+        <section class="section">
+            <h2>Task A: Container with Two Rows and Equal Columns</h2>
+            <p class="text-muted">Two rows, each containing two equal-width columns.</p>
+            <div class="container border rounded-3 p-3">
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <div class="demo">
+                            <h5>Row 1 - Column 1</h5>
+                            <p class="mb-0">First equal-width column.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="demo">
+                            <h5>Row 1 - Column 2</h5>
+                            <p class="mb-0">Second equal-width column.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="demo">
+                            <h5>Row 2 - Column 1</h5>
+                            <p class="mb-0">First equal-width column.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="demo">
+                            <h5>Row 2 - Column 2</h5>
+                            <p class="mb-0">Second equal-width column.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Task B: Responsive Container-Fluid Layout</h2>
+            <p class="text-muted">Three rows: different-width columns, one full-width column and three responsive
+                images.</p>
+            <div class="container-fluid border rounded-3 p-3">
+                <div class="row g-3 mb-3">
+                    <div class="col-md-8">
+                        <div class="demo">
+                            <h5>First Row - 8 Columns</h5>
+                            <p class="mb-0">8 out of 12 grid columns.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="demo">
+                            <h5>First Row - 4 Columns</h5>
+                            <p class="mb-0">4 out of 12 grid columns.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="demo">
+                            <h5>Second Row - Full Width</h5>
+                            <p class="mb-0">Spans the full width on all screen sizes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4"><img class="img-fluid rounded-3" src="images/mountain-lake.svg"
+                            alt="Mountain lake" loading="lazy">
+                        <p class="text-center fw-semibold mt-2">Mountain Lake</p>
+                    </div>
+                    <div class="col-md-4"><img class="img-fluid rounded-3" src="images/beautiful-lake.svg"
+                            alt="Lake and mountains" loading="lazy">
+                        <p class="text-center fw-semibold mt-2">Beautiful Lake</p>
+                    </div>
+                    <div class="col-md-4"><img class="img-fluid rounded-3" src="images/snowy-mountains.svg"
+                            alt="Snowy mountains" loading="lazy">
+                        <p class="text-center fw-semibold mt-2">Snowy Mountains</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Task C: Nested Grid Layout</h2>
+            <p class="text-muted">The second outer column contains a nested row with two inner columns.</p>
+            <div class="container border rounded-3 p-3">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="demo">
+                            <h5>Outer Column 1</h5>
+                            <p class="mb-0">First column of the main row.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="demo">
+                            <h5>Outer Column 2</h5>
+                            <div class="row g-2 mt-2">
+                                <div class="col-6">
+                                    <div class="inner"><strong>Nested Column 1</strong>
+                                        <p class="small mb-0 mt-2">Inner content A</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="inner"><strong>Nested Column 2</strong>
+                                        <p class="small mb-0 mt-2">Inner content B</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Task D: Form Layout Using Bootstrap Grid</h2>
+            <p class="text-muted">Labels are in the first column and form inputs are in the second column.</p>
+            <form id="studentForm">
+                <div class="row mb-3 align-items-center">
+                    <div class="col-md-4"><label for="studentName" class="form-label fw-semibold">Full Name</label>
+                    </div>
+                    <div class="col-md-8"><input id="studentName" class="form-control" type="text"
+                            placeholder="Enter your full name" required></div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-md-4"><label for="studentEmail" class="form-label fw-semibold">Email Address</label>
+                    </div>
+                    <div class="col-md-8"><input id="studentEmail" class="form-control" type="email"
+                            placeholder="example@email.com" required></div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-md-4"><label for="course" class="form-label fw-semibold">Select Course</label></div>
+                    <div class="col-md-8"><select id="course" class="form-select" required>
+                            <option value="">Choose a course</option>
+                            <option>Web Engineering</option>
+                            <option>Software Engineering</option>
+                            <option>Database Systems</option>
+                        </select></div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-md-4"><label for="message" class="form-label fw-semibold">Message</label></div>
+                    <div class="col-md-8"><textarea id="message" class="form-control" rows="3"
+                            placeholder="Write your message"></textarea></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8"><button class="btn btn-primary" type="submit">Submit Form</button> <button
+                            class="btn btn-outline-secondary" type="reset">Reset</button></div>
+                </div>
+            </form>
+            <!-- Task E: Success alert appears after valid form submission -->
+            <div id="successAlert" class="alert alert-success alert-dismissible fade show mt-4 d-none" role="alert">
+                <strong>Success!</strong> Your form has been submitted successfully.<button type="button"
+                    class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+        </section>
+
+        <section class="section">
+            <h2>Task F: Bootstrap Card Component</h2>
+            <p class="text-muted">Card with top image, title, description and Read More button.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card shadow-sm h-100">
+                        <img class="card-img-top destination" src="images/nature-card.svg" alt="Scenic nature"
+                            loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Explore Beautiful Nature</h5>
+                            <p class="card-text">Discover peaceful landscapes, beautiful mountains and amazing places.
+                                Nature provides a refreshing experience for everyone.</p><a class="btn btn-primary"
+                                href="https://en.wikipedia.org/wiki/Nature" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Task G: Three-Column Product Grid</h2>
+            <p class="text-muted">Each product card contains an image, product name and Add to Cart button.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100"><img class="card-img-top product" src="images/headphones.svg"
+                            alt="Wireless headphones" loading="lazy">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Wireless Headphones</h5>
+                            <p class="card-text text-muted">Comfortable headphones with clear sound.</p><button
+                                class="btn btn-success add-cart" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100"><img class="card-img-top product" src="images/watch.svg"
+                            alt="Wrist watch" loading="lazy">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Classic Wrist Watch</h5>
+                            <p class="card-text text-muted">A simple and stylish watch for everyday use.</p><button
+                                class="btn btn-success add-cart" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100"><img class="card-img-top product" src="images/camera.svg"
+                            alt="Digital camera" loading="lazy">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Digital Camera</h5>
+                            <p class="card-text text-muted">Capture your favourite moments in detail.</p><button
+                                class="btn btn-success add-cart" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cartMessage" class="alert alert-info mt-4 d-none" role="status" aria-live="polite"></div>
+        </section>
+
+        <section class="section">
+            <h2>Task H: Bootstrap Button Group</h2>
+            <p class="text-muted">Button group examples with different colours, sizes and styles.</p>
+            <h6 class="fw-bold">Different Button Colours</h6>
+            <div class="btn-group mb-4" role="group" aria-label="Button colours"><button
+                    class="btn btn-primary">Primary</button><button class="btn btn-success">Success</button><button
+                    class="btn btn-danger">Danger</button><button class="btn btn-warning">Warning</button></div>
+            <h6 class="fw-bold">Different Button Sizes</h6>
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-4"><button class="btn btn-primary btn-sm">Small
+                    Button</button><button class="btn btn-primary">Normal Button</button><button
+                    class="btn btn-primary btn-lg">Large Button</button></div>
+            <h6 class="fw-bold">Different Button Styles</h6>
+            <div class="d-flex flex-wrap gap-2"><button class="btn btn-secondary">Solid Button</button><button
+                    class="btn btn-outline-primary">Outline Button</button><button class="btn btn-dark">Dark
+                    Button</button><button class="btn btn-link">Link Button</button></div>
+        </section>
+
+        <footer class="text-center py-3">
+            <p class="mb-1 fw-semibold">Web Engineering - Lab #07</p><small>Created with HTML5, CSS3 and Bootstrap
+                5</small>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Task E: Display a success alert after valid form submission.
+        const studentForm = document.getElementById("studentForm");
+        studentForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (!studentForm.checkValidity()) {
+                studentForm.reportValidity();
+                return;
+            }
+            document.getElementById("successAlert").classList.remove("d-none");
+            studentForm.reset();
+        });
+
+        // Task G: Demonstration message for Add to Cart buttons.
+        document.querySelectorAll(".add-cart").forEach(function (button) {
+            button.addEventListener("click", function () {
+                const name = button.closest(".card").querySelector(".card-title").textContent;
+                const message = document.getElementById("cartMessage");
+                message.textContent = name + " has been added to your demo cart.";
+                message.classList.remove("d-none");
+            });
+        });
+    </script>
+</body>
+
+</html>
